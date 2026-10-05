@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*colores*/
+
+:root{
+    --background-color: white;
+    --text-title-color:#053D4E;
+    --text-color: #32363B;
+    --icon-color: #32363B;
+    --icon-menu-color: #707780;
+    --menu-color:#707780;
+    --text-selected-color: #355CC0;
+    --background-selected: #EBF0FF;
+    --background-hover: #F7F9FA;
+    --border-color: #E6E9ED;
+}
+
+/*global estilos */
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* body */
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+/* seccion header */
+
+header{
+    border: 2px solid red;
+    z-index: 200;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.45rem 2rem 0.45rem 1.27rem;
+    border-bottom: 1px solid var(--border-color--);
+    position: fixed;
+    background-color: var(--background-color--);
+    top: 0;
+    left: 0;
+}
+
+/* seccion left */
+
+.left{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+}
+
+/* menu container */
+.menu-container{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* munu container dos */
+.menu{  
+    
+    width: 1.15rem;
+    height: 37%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* menu primer div */
+
+.menu div{    
+    width: 100%;
+    height: 0.15rem;
+    background-color: black;
+}
+.brand{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+/* seccion brand-logo */
+.brand .logo{
+    width: 2.5rem;
+}
+
+/* brand - name */
+
+.brand .name{
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-title-color--);  
+}
+
+
+
+/* seccion right */
+
+.right{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem; 
+}
+
+/* etiquetas a */
+
+.right a{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+.right a:hover{
+    background-color: var(--background-hover);
+}
+
+/* seccion right-img */
+
+.right img{
+    width: 1.5rem;
+    margin: 0.5rem;
+}
+
+/* etiqueta right - user */
+
+.right .user{
+    width: 2.7rem;
+    border-radius: 50%;
+}
+
+/* sidebar icons y otros */
+.sidebar{
+    border: 2px solid red;
+}
+
+.sidebar img{
+    width: 1.6rem;
+
+}
